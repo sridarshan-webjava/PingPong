@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="icon" type="image/x-icon" href="myfavicon.ico">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="display-container" id="display-container">
+        <!-- wrapper container containing canvas and other containers -->
+        <div class="wrapper-container" id="wrapper">
+            <!-- canvas element -->
+            <canvas id="canvas" width="650" height="500"></canvas>
+            <!-- input container to obtain input -->
+                <div class="input-container container" id="input-container">
+                    <!-- wrapper containing label , input and button -->
+                    <div class="user-input" id="input">
+                        <label for="username">Enter your name</label>
+                        <input id="username" type="text">
+                        <button id="create-btn">CREATE</button>
+                    </div>
+                </div>
+                <!-- Message container to display a welcome message -->
+                <div class="welcome-user-container container" id="welcome-container">
+                    <!-- Content container containing user and computer avatar image and buton
+                    to start the game -->
+                    <div class="content-container" id="message">  
+                        <h1>Welcome</h1>
+                        <!-- Avatar (Image) container for user and computer -->
+                        <div class="avatar-container" id="avatar">
+                           <div class="card user" id="user-card">
+                                <img class="user-image" id="user-image" src="" alt="user avatar image">
+                                <h1 id="user-name">Sridarshan</h1>
+                            </div>
+                            <span>VS</span>
+                            <div class="card ai" id="ai-card">
+                                <img class="ai-image" id="ai-image" src="" alt="computer avatar image">
+                                <h1>Computer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button to start game  -->
+                    <button class="ready" id="ready">READY</button>
+                </div>
+                <!-- Result container to display final result -->
+                <div class="result-container container" id="result-container">
+                    <img src="" id="winner-image" alt="image of winner">
+                    <h1 id="result-title"></h1>
+                    <button id="play-again">PLAY AGAIN</button>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
