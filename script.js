@@ -18,9 +18,9 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 //audio elements to be played during the game
-const hitSound = new Audio('../sounds/hitSound.wav');
-const scoreSound = new Audio('../sounds/scoreSound.wav');
-const wallHitSound = new Audio('../sounds/wallHitSound.wav');
+const hitSound = new Audio("paddlesound.mp3");
+const scoreSound = new Audio("scoresound.mp3");
+const wallHitSound = new Audio("wallsound.mp3");
 
 //user object
 const user = {
